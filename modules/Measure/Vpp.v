@@ -5,9 +5,9 @@ module Vpp
 
 			 input [data_bit_width - 1: 0]data_u,
 
-			 output reg[data_bit_width - 1: 0]max = 1'd0,
-			 output reg[data_bit_width - 1: 0]min = 1'd0,
-			 output reg[data_bit_width - 1: 0]vpp = 1'd0,
+			 output reg [data_bit_width - 1: 0]max = 1'd0,
+			 output reg [data_bit_width - 1: 0]min = 1'd0,
+			 output reg [data_bit_width - 1: 0]vpp = 1'd0,
 
 			 output reg irq = 1'd0
 		 );
