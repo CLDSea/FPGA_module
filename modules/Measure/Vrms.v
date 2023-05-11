@@ -23,12 +23,12 @@ reg [data_bit_width << 1 + bit_points - 3: 0]sum = 1'd0;
 reg [data_bit_width << 1 - 3: 0]aver = 1'd0;
 
 //计数
-ClkDiv #(1'd1 << bit_points)ClkDiv_inst
+ClkDiv #(1'd1 << bit_points, 1'd1 << (bit_points - 1))ClkDiv_inst
 		 (
-			 .clk(clk_fs) ,   	// input  clk_sig
-			 .rst_n(rst_n) ,   	// input  rst_n_sig
-			 .phase_rst(1'd0) ,   	// input  phase_rst_sig
-			 .clk_div() ,   	// output  clk_div_sig
+			 .clk(clk_fs) ,    	// input  clk_sig
+			 .rst_n(rst_n) ,    	// input  rst_n_sig
+			 .phase_rst(1'd0) ,    	// input  phase_rst_sig
+			 .clk_div() ,    	// output  clk_div_sig
 			 .cnt(cnt) 	// output [31:0] cnt_sig
 		 );
 

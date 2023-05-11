@@ -23,7 +23,7 @@ reg [data_bit_width - 1: 0]max_reg = 1'd0;
 reg [data_bit_width - 1: 0]min_reg = 1'd0;
 
 //计数
-ClkDiv #(points)ClkDiv_inst
+ClkDiv #(points,points[31:1])ClkDiv_inst
 		 (
 			 .clk(clk_fs) , 	// input  clk_sig
 			 .rst_n(rst_n) , 	// input  rst_n_sig
