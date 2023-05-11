@@ -17,10 +17,10 @@ wire [48: 0]temp;
 
 wire [31: 0]K_12_20;//定点数
 
+wire [15: 0]tri_u_reg;
+
 //reg
 reg [31: 0]phase = 1'd0;
-
-reg [15: 0]tri_u_reg;
 
 assign temp = fre * 24'd11258999;
 
