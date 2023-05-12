@@ -12,8 +12,8 @@ module FreGate
 
 		 );
 
-localparam [31: 0]cnt_max = 32'd55_000_000;
-localparam [31: 0]cnt_threshold = 32'd50_000_000;
+localparam [31: 0]cnt_max = 32'd110_000_000;
+localparam [31: 0]cnt_threshold = 32'd100_000_000;
 
 //wire
 wire [31: 0]cnt;
