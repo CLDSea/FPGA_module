@@ -36,7 +36,7 @@ begin
 		end
 		else
 		begin
-			cnt <= (cnt < cnt_max - 1'd1) ? cnt + 1'd1 : 1'd0;
+			cnt <= (cnt != cnt_max - 1'd1) ? cnt + 1'd1 : 1'd0;
 			if (cnt == cnt_max - 1'd1)
 			begin
 				clk_div <= 1'd1;
