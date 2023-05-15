@@ -1,13 +1,13 @@
 /*
- * SPI.h
- *
- *  Created on: 2023年5月14日
- *      Author: FuYuhao
- */
+    SPI.h
+
+    Created on: 2023年5月14日
+        Author: FuYuhao
+*/
 
 #ifndef SPI_H_
 #define SPI_H_
 
-void SpiTX(alt_u64 data,int len);
+void SpiTX(alt_u64 data, int len);
 
 #endif /* LIB_SPI_H_ */

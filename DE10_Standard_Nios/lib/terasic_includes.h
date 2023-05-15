@@ -1,9 +1,9 @@
 /*
- * terasic_includes.h
- *
- *  Created on: 2017年1月3日
- *      Author: Administrator
- */
+    terasic_includes.h
+
+    Created on: 2017年1月3日
+        Author: Administrator
+*/
 
 #ifndef TERASIC_INCLUDES_H_
 #define TERASIC_INCLUDES_H_

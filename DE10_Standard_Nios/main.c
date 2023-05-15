@@ -12,40 +12,35 @@
 #include <math.h>
 
 #ifdef DEBUG_APP
-    #define APP_DEBUG(x)    DEBUG(x)
+	#define APP_DEBUG(x)    DEBUG(x)
 #else
-    #define APP_DEBUG(x)
+	#define APP_DEBUG(x)
 #endif
 
 void Init()
 {
 	TimerIrqInit();
 	KeyIrqInit();
-
-	UartIrqInit(921600);
-
-	//AD9910Init();
-	//AD9958Init();
+	//	UartIrqInit(921600);
+	AD9910Init();
+	//	AD9958Init();
 }
 
 int main()
 {
-    printf("Hello Nios\n");
-
-    Init();
-
-    printf("Inited\n");
-
-    while(1)
-    {
-//    	if(key_value!=-1)
-//    	{
-//    		key_value=-1;+
-//    	}
-//
-//    	if(ctrl_value!=-1)
-//    	{
-//    		ctrl_value=-1;
-//    	}
-    }
+	printf("Hello Nios\n");
+	Init();
+	printf("Inited\n");
+	while(1)
+	{
+		//    	if(key_value!=-1)
+		//    	{
+		//    		key_value=-1;+
+		//    	}
+		//
+		//    	if(ctrl_value!=-1)
+		//    	{
+		//    		ctrl_value=-1;
+		//    	}
+	}
 }

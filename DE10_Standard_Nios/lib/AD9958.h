@@ -1,14 +1,14 @@
 /*
- * AD9910.h
- *
- *  Created on: 2023年5月13日
- *      Author: FuYuhao
- */
+    AD9910.h
+
+    Created on: 2023年5月13日
+        Author: FuYuhao
+*/
 
 #ifndef AD9910_H_
 #define AD9910_H_
 
 void AD9958Init();
-void AD9958FrePhaseAmp(int fre,int phase,double amp, int ch);
+void AD9958FrePhaseAmp(int fre, int phase, double amp, int ch);
 
 #endif /* AD9910_H_ */

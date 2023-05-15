@@ -1,18 +1,18 @@
 /*
- * SPI.c
- *
- *  Created on: 2023年5月14日
- *      Author: FuYuhao
- */
+    SPI.c
+
+    Created on: 2023年5月14日
+        Author: FuYuhao
+*/
 
 #include "terasic_includes.h"
 #include "AD9910.h"
 
-void SpiTX(alt_u64 data,int len)
+void SpiTX(alt_u64 data, int len)
 {
-	for(int i=0;i<len;i++)
+	for(int i = 0; i < len; i++)
 	{
-		while(!(IORD(SPI_BASE,2)&0x40));
-		IOWR(SPI_BASE,1,(data>>((len-i-1)*8))&0xFF);
+		while(!(IORD(SPI_BASE, 2) & 0x40));
+		IOWR(SPI_BASE, 1, (data >> ((len - i - 1) * 8)) & 0xFF);
 	}
 }

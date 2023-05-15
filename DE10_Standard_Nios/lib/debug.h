@@ -1,12 +1,12 @@
 // --------------------------------------------------------------------
-// Copyright (c) 2007 by Terasic Technologies Inc. 
+// Copyright (c) 2007 by Terasic Technologies Inc.
 // --------------------------------------------------------------------
 //
 // Permission:
 //
 //   Terasic grants permission to use and modify this code for use
-//   in synthesis for all Terasic Development Boards and Altera Development 
-//   Kits made by Terasic.  Other use of this code, including the selling 
+//   in synthesis for all Terasic Development Boards and Altera Development
+//   Kits made by Terasic.  Other use of this code, including the selling
 //   ,duplication, or modification of any portion is strictly prohibited.
 //
 // Disclaimer:
@@ -15,11 +15,11 @@
 //   which illustrates how these types of functions can be implemented.
 //   It is the user's responsibility to verify their design for
 //   consistency and functionality through the use of formal
-//   verification methods.  Terasic provides no warranty regarding the use 
+//   verification methods.  Terasic provides no warranty regarding the use
 //   or functionality of this code.
 //
 // --------------------------------------------------------------------
-//           
+//
 //                     Terasic Technologies Inc
 //                     356 Fu-Shin E. Rd Sec. 1. JhuBei City,
 //                     HsinChu County, Taiwan
@@ -36,9 +36,9 @@
 //#define ENABLE_UART_DEBUG
 
 
-int myprintf(char *format, ...);
-int myprintf_hex_array(unsigned char *pHex, int len);
-int  myprintf_dword_array(unsigned int *pArray, int nElementCount);
+int myprintf(char* format, ...);
+int myprintf_hex_array(unsigned char* pHex, int len);
+int  myprintf_dword_array(unsigned int* pArray, int nElementCount);
 
 
 
@@ -48,8 +48,8 @@ int  myprintf_dword_array(unsigned int *pArray, int nElementCount);
 #define DEBUG_DWORD_ARRAY(x)   {myprintf_dword_array x;}
 
 #define DEBUG_APP
-#define xDEBUG_FAT           
-#define DEBUG_ENET          
+#define xDEBUG_FAT
+#define DEBUG_ENET
 #define DEBUG_I2C
 #define DEBUG_AUDIO
 #define DEBUG_FLASH
