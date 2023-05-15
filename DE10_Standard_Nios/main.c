@@ -1,9 +1,13 @@
-#include "terasic_includes.h"
-#include "LED.h"
-#include "SEG7.h"
-#include "TIMER.h"
-#include "KEY.h"
-#include "UART.h"
+#include "lib/terasic_includes.h"
+#include "lib/LED.h"
+#include "lib/SEG7.h"
+#include "lib/TIMER.h"
+#include "lib/KEY.h"
+#include "lib/UART.h"
+#include "lib/SPI.h"
+#include "lib/AD9958.h"
+#include "lib/AD9910.h"
+
 
 #include <math.h>
 
@@ -19,6 +23,9 @@ void Init()
 	KeyIrqInit();
 
 	UartIrqInit(921600);
+
+	//AD9910Init();
+	//AD9958Init();
 }
 
 int main()
@@ -28,11 +35,12 @@ int main()
     Init();
 
     printf("Inited\n");
+
     while(1)
     {
 //    	if(key_value!=-1)
 //    	{
-//    		key_value=-1;
+//    		key_value=-1;+
 //    	}
 //
 //    	if(ctrl_value!=-1)
